@@ -1,0 +1,53 @@
+.solutions
+
+  &__grid
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    overflow: hidden
+
+    .title
+      margin: 0 0 40px 0
+
+  &__wrap
+    display: flex
+    width: 105%
+    height: 360px
+
+  &__item
+    width: 26%
+    transform: skew(-8deg)
+    background-size: cover !important
+    cursor: pointer
+    transition: all .3s ease-out
+
+    &:nth-child(1)
+      background: $dark url('../images/solutions__item-bg-1.png') no-repeat center
+      &:hover
+        background: $accent url('../images/solutions__item-bg-1.png') no-repeat center
+
+    &:nth-child(2)
+      background: $dark url('../images/solutions__item-bg-2.png') no-repeat center
+      &:hover
+        background: $accent url('../images/solutions__item-bg-2.png') no-repeat center
+
+    &:nth-child(3)
+      background: $dark url('../images/solutions__item-bg-3.png') no-repeat center
+      &:hover
+        background: $accent url('../images/solutions__item-bg-3.png') no-repeat center
+
+    &:nth-child(4)
+      padding: 0 2% 0 0
+      background: $dark url('../images/solutions__item-bg-4.png') no-repeat center
+      &:hover
+        background: $accent url('../images/solutions__item-bg-4.png') no-repeat center
+
+    span
+      display: block
+      margin: 60px auto 0 auto
+      transform: skew(8deg)
+      text-align: center
+      font-weight: 600
+      font-size: 20px
+      color: $light

@@ -1,0 +1,52 @@
+.partners
+  margin: 0 0 70px 0
+
+  &__grid
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .title
+      margin: 0 0 40px 0
+
+  &__carousel
+    position: relative
+
+  &__item
+    width: 120px
+    height: 100px
+    background-size: contain !important
+
+    &_1
+      background: url('../images/partners__item-1.png') no-repeat center
+    &_2
+      background: url('../images/partners__item-2.png') no-repeat center
+    &_3
+      background: url('../images/partners__item-3.png') no-repeat center
+    &_4
+      background: url('../images/partners__item-4.png') no-repeat center
+    &_5
+      background: url('../images/partners__item-5.png') no-repeat center
+    &_6
+      background: url('../images/partners__item-6.png') no-repeat center
+
+  .owl-prev
+    span
+      position: absolute
+      top: 40px
+      right: -120px
+      width: 42px
+      height: 30px
+      background: url('../images/arrow_green.svg') no-repeat center
+      transform: rotate(-90deg)
+      color: #fff
+  .owl-next
+    span
+      position: absolute
+      top: 40px
+      left: -120px
+      width: 42px
+      height: 30px
+      background: url('../images/arrow_green.svg') no-repeat center
+      transform: rotate(90deg)
+      color: #fff
