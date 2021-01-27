@@ -23,9 +23,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'webpack Boilerplate',
       template: path.resolve(__dirname, './src/index.html'),
       filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/solutions.html'),
+      filename: 'solutions.html'
     }),
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin()

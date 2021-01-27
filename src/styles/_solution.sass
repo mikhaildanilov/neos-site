@@ -1,0 +1,80 @@
+.solution
+  position: relative
+  margin: 42px 0 82px 0
+
+  &__line
+    z-index: 0
+    width: 100%
+    height: 1px
+    margin: 0 0 48px 0
+    background: $accent
+
+  .title_h2
+    position: absolute
+    z-index: 1
+    top: -20px
+    left: calc(50% + 40px)
+    padding: 4px 12px
+    background: #fff
+
+  &__grid
+    display: flex
+    align-items: center
+    width: 100%
+
+  &__img
+    width: 50%
+    height: 264px
+    background-size: cover !important
+    &_1
+      background: url('../images/solution__item-1.png') no-repeat center
+    &_2
+      background: url('../images/solution__item-2.png') no-repeat center
+    &_3
+      background: url('../images/solution__item-3.png') no-repeat center
+    &_4
+      background: url('../images/solution__item-4.png') no-repeat center
+
+  &__wrap
+    display: flex
+    flex-direction: column
+    width: 50%
+
+    .title
+      margin: 0 0 16px 0
+
+    a
+      display: flex
+      align-items: center
+      margin-bottom: 16px
+      font-weight: 400
+      font-size: 1.1rem
+      color: $dark
+      transition: all .3s ease-out
+      &:last-child
+        margin: 0
+      &::before
+        content: ''
+        width: 6px
+        height: 6px
+        margin: -4px 20px 0 32px
+        border-radius: 4px
+        background: $dark
+      &:hover
+        color: $accent
+        &::before
+          animation: pulse 1.3s infinite
+          background: $accent
+
+@keyframes pulse
+  20%
+    transform: scale(0.95)
+    box-shadow: 0 0 0 0 rgba($accent, 0.7)
+
+  70%
+    transform: scale(1)
+    box-shadow: 0 0 0 10px rgba($accent, 0)
+
+  100%
+    transform: scale(0.95)
+    box-shadow: 0 0 0 0 rgba($accent, 0)
