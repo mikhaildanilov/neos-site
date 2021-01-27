@@ -34,6 +34,10 @@
       background: url('../images/solution__item-3.png') no-repeat center
     &_4
       background: url('../images/solution__item-4.png') no-repeat center
+    &_xsm-mux
+      height: 260px
+      background: url('../images/solution__item-xsm-mux.png') no-repeat center
+      background-size: contain !important
 
   &__wrap
     display: flex
@@ -65,16 +69,3 @@
         &::before
           animation: pulse 1.3s infinite
           background: $accent
-
-@keyframes pulse
-  20%
-    transform: scale(0.95)
-    box-shadow: 0 0 0 0 rgba($accent, 0.7)
-
-  70%
-    transform: scale(1)
-    box-shadow: 0 0 0 10px rgba($accent, 0)
-
-  100%
-    transform: scale(0.95)
-    box-shadow: 0 0 0 0 rgba($accent, 0)

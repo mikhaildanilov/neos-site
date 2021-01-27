@@ -30,6 +30,10 @@ module.exports = {
       template: path.resolve(__dirname, './src/solutions.html'),
       filename: 'solutions.html'
     }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/xsm-mux.html'),
+      filename: 'xsm-mux.html'
+    }),
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ],
