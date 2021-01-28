@@ -1,0 +1,23 @@
+.checkbox
+  width: 20px
+  height: 20px
+  margin: 0 8px 0 0
+  border: 1px solid rgba($accent, .4)
+  border-radius: 1px
+  transition: all .15 ease-out
+  &:checked + .checkbox
+    background: $accent url('../images/checkbox__check.png') no-repeat center
+
+  &__wrap
+    display: flex
+    align-items: center
+
+  &__label
+    margin-top: 2px
+    line-height: .8rem
+    color: $dark
+    font-size: .8rem
+    a
+      color: $accent
+      &:hover
+        color: $dark

@@ -1,0 +1,55 @@
+.popup
+  position: relative
+  display: flex
+  flex-direction: column
+  padding: 16px 32px
+  background: #fff
+  border-radius: 1px
+  &_s
+    width: 270px
+    padding: 32px
+
+  &__wrap
+    position: fixed
+    z-index: 99
+    top: 0
+    left: 0
+    display: none
+    align-items: center
+    justify-content: center
+    width: 100vw
+    height: 100vh
+    background: rgba($dark, .8)
+
+    &.active
+      display: flex
+
+  .title_h3
+    margin: 0 0 16px
+
+  .input__wrap
+    margin-bottom: 16px
+
+  .checkbox__wrap
+    margin-top: 16px
+
+  &__close
+    position: absolute
+    top: 0
+    right: 0
+    width: 40px
+    height: 40px
+    border-radius: 40px
+    background: url('../images/close.svg') no-repeat center
+    cursor: pointer
+    &:hover
+      animation: pulse 1s
+
+  &__line
+    width: calc(100% + 64px)
+    height: 1px
+    margin: 24px 0 24px -32px
+    background: rgba($accent, 1)
+
+#orderPopup
+  // display: flex
