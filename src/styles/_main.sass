@@ -5,7 +5,6 @@
     position: relative
     margin: 0 0 24px 0
     padding: 16px 32px 16px 32px
-    border: 1px solid #fff
     border-radius: 4px
     transition: all .15s ease-out
     box-shadow: 0px 0px 1px rgba(0, 45, 77, 0.3), 0px 3px 4px rgba(0, 45, 77, 0.05)
@@ -34,3 +33,17 @@
     margin: 0 0 24px 0
     p:not(:last-child)
       margin: 0 0 16px
+
+  &__product
+    height: 120px
+    padding: 16px 32px 16px 32px
+    border-radius: 4px
+    transition: all .15s ease-out
+    box-shadow: 0px 0px 1px rgba(0, 45, 77, 0.3), 0px 3px 4px rgba(0, 45, 77, 0.05)
+    background: #fff url('../images/product-icon.svg') no-repeat right bottom
+
+    &-wrap
+      display: grid
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+      grid-gap: 16px 16px
+      width: 100%
