@@ -1,0 +1,36 @@
+.main
+  padding: 64px 0 64px 0
+
+  &__item
+    position: relative
+    margin: 0 0 24px 0
+    padding: 16px 32px 16px 32px
+    border: 1px solid #fff
+    border-radius: 4px
+    transition: all .15s ease-out
+    box-shadow: 0px 0px 1px rgba(0, 45, 77, 0.3), 0px 3px 4px rgba(0, 45, 77, 0.05)
+    background: #fff url('../images/decree-icon.svg') no-repeat right bottom
+    &:last-child
+      margin: 0
+
+  &__content
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    a
+      margin-bottom: .6rem
+      color: $accent
+      text-decoration: underline
+      font-size: .9rem
+      transition: all .15s ease-out
+      &:hover
+        color: $dark
+        text-decoration: none
+    .title
+      margin: 0 0 12px 0
+
+  &__text-block
+    width: 80%
+    margin: 0 0 24px 0
+    p:not(:last-child)
+      margin: 0 0 16px
