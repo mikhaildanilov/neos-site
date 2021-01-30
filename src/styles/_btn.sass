@@ -17,19 +17,32 @@
 
   &_light
     background: $light
+    border: 2px solid $light
     color: $accent
     &:hover
+      border: 2px solid $accent
       background: $accent
       color: $light
   &_dark
     background: $dark
     color: $light !important
+    border: 2px solid $dark
     &:hover
+      border: 2px solid $accent
       background: $accent
       color: $light !important
   &_green
+    border: 2px solid $accent
     background: $accent
     color: $light
+  &_empty
+    background: transparent
+    border: 2px solid $light
+    color: $light
+    &:hover
+      background: $accent
+      border: 2px solid $accent
+      color: $light
 
 button.btn
   padding: 12px 20px 12px 20px
