@@ -31,6 +31,11 @@
       .main__content
         padding: 16px 32px 16px 32px
 
+    &_map
+      .main__img
+        width: 200%
+        height: 300px
+
   &__content
     display: flex
     align-items: flex-start
@@ -46,6 +51,10 @@
         text-decoration: none
     .title
       margin: 0 0 12px 0
+    .title_h4
+      margin: 0 0 4px 0
+    .text
+      margin: 0 0 16px 0
 
   &__text-block
     width: 80%
@@ -60,6 +69,8 @@
     transition: all .15s ease-out
     box-shadow: 0px 0px 1px rgba(0, 45, 77, 0.3), 0px 3px 4px rgba(0, 45, 77, 0.05)
     background: #fff url('../images/product-icon.svg') no-repeat right bottom
+    &:hover
+      box-shadow: 0px 0px 8px rgba(0, 45, 77, 0.05), 0px 32px 40px rgba(0, 45, 77, 0.15)
 
     &-wrap
       display: grid
