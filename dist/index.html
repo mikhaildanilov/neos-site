@@ -84,7 +84,7 @@
     </div>
   </header>
 
-  <section class="banner">
+  <section class="banner banner_index">
     <div class="grid banner__grid">
       <h1 class="title title_h1 title_light">
         Решения для СОРМ, пассивный мониторинг сетей, системы записи переговоров
@@ -93,118 +93,150 @@
         Разрабатываем, производим и устанавливаем с 2005 года
       </span>
 
-      <a href="#" class="btn btn_light">Подобрать решение</a>
+      <a href="#" class="btn btn_light" id="openOrderPopup2">Оставить заявку</a>
     </div>
   </section>
 
-  <section class="we-do">
-    <div class="we-do__line we-do__line_start"></div>
-    <div class="grid we-do__grid">
-      <h2 class="title title_h2">Что мы делаем</h2>
-      <div class="we-do__wrap">
-        <span class="we-do__item">
-          Разрабатываем оборудование СОРМ под специфику конкретных операторов
-        </span>
-        <div class="we-do__line"></div>
-        <span class="we-do__item">Поставляем готовые решения СОРМ и кастомизируем их</span>
-        <div class="we-do__line"></div>
-        <span class="we-do__item">
-          Осуществляем пуско-наладочные работы и сопровождаем сдачу СОРМ уполномоченному органу
-        </span>
+  <section class="main">
+    <div class="grid">
+      <div class="main__text-block">
+        <h2 class="title title_h2">Что мы делаем</h2>
       </div>
-    </div>
-    <div class="we-do__line we-do__line_end"></div>
-  </section>
 
-  <section class="solutions">
-    <div class="grid solutions__grid">
-      <h2 class="title title_h2">Готовые решения</h2>
-      <div class="solutions__wrap">
-        <a class="solutions__item" href="#">
-          <span>Фиксированная<br />связь</span>
-        </a>
-        <a class="solutions__item" href="#">
-          <span>Сотовая<br />связь</span>
-        </a>
-        <a class="solutions__item" href="#">
-          <span>Передача<br />данных</span>
-        </a>
-        <a class="solutions__item" href="#">
-          <span>Транкинговая<br />связь</span>
-        </a>
+      <div class="main__product-wrap main__product-wrap_we-do">
+        <div class="main__product">
+          <span class="text">
+            Разрабатываем оборудование СОРМ под специфику конкретных операторов
+          </span>
+        </div>
+        <div class="main__product">
+          <span class="text">
+            Поставляем готовые решения СОРМ и кастомизируем их
+          </span>
+        </div>
+        <div class="main__product">
+          <span class="text">
+            Налаживаем, запускаем и сопровождаем сдачу СОРМ уполномоченному органу
+          </span>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="need-solution">
-    <div class="grid need-solution__grid">
+  <section class="main">
+    <div class="grid">
+      <div class="main__text-block">
+        <h2 class="title title_h2">Готовые решения</h2>
+      </div>
+
+      <div class="main__product-wrap main__product-wrap_solutions">
+        <a class="main__product" href="solutions.html#fix">
+          <span class=" title title_h3 title_light">
+            Фиксированная связь
+          </span>
+        </a>
+
+        <a class="main__product" href="solutions.html#mob">
+          <span class="title title_h3 title_light">
+            Сотовая связь
+          </span>
+        </a>
+
+        <a class="main__product" href="solutions.html#data">
+          <span class="title title_h3 title_light">
+            Передача данных
+          </span>
+        </a>
+
+        <a class="main__product" href="solutions.html#trunk">
+          <span class="title title_h3 title_light">
+            Транкинговая связь
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="main main_selection">
+    <div class="grid">
       <h2 class="title title_light title_h2">Подобрать решение</h2>
 
-      <div class="need-solution__wrap" id="firstBlock">
-        <h3 class="title title_h3 title_light">Чем занимается ваша компания?</h3>
+      <h3 class=" title title_h3 title_light">Чем занимается ваша компания?</h3>
 
-        <div class="radio__wrap">
+      <div class="main__product-wrap main__product-wrap_selection" id="firstBlock">
+        <label class="main__product" for="company1">
           <input type="radio" class="radio" name="company" id="company1" />
           <label for="company1" class="radio__label">Голосовая связь</label>
-        </div>
-        <div class="radio__wrap">
+        </label>
+
+        <label class="main__product" for="company2">
           <input type="radio" class="radio" name="company" id="company2" />
           <label for="company2" class="radio__label">Интернет</label>
-        </div>
-        <div class="radio__wrap">
+        </label>
+
+        <label class="main__product" for="company3">
           <input type="radio" class="radio" name="company" id="company3" />
-          <label for="company3" class="radio__label">Голосовая связь и интернет</label>
-        </div>
+          <label for="company3" class="radio__label">Голосовая связь и интернет</label>
+        </label>
       </div>
 
-      <div class="need-solution__wrap" id="secondBlock">
+
+      <div id="secondBlock">
         <h3 class="title title_h3 title_light">Какие требования нужно закрыть?</h3>
 
-        <div class="radio__wrap">
-          <input type="radio" class="radio" name="demand" id="demand1" />
-          <label for="demand1" class="radio__label">«Пакет Яровой»</label>
-        </div>
-        <div class="radio__wrap">
-          <input type="radio" class="radio" name="demand" id="demand2" />
-          <label for="demand2" class="radio__label">
-            Приказ № 70 Госкомсвязи России от 20.04.1999
+        <div class="main__product-wrap main__product-wrap_selection">
+          <label class="main__product" for="demand1">
+            <input type="radio" class="radio" name="demand" id="demand1" />
+            <label for="demand1" class="radio__label">«Пакет Яровой»</label>
           </label>
-        </div>
-        <div class="radio__wrap">
-          <input type="radio" class="radio" name="demand" id="demand3" />
-          <label for="demand3" class="radio__label">
-            Приказ № 268 Минкомсвязи России от 19.11.2012
+
+          <label class="main__product" for="demand2">
+            <input type="radio" class="radio" name="demand" id="demand2" />
+            <label for="demand2" class="radio__label">
+              Приказ № 70 Госкомсвязи России от 20.04.1999
+            </label>
           </label>
-        </div>
-        <div class="radio__wrap">
-          <input type="radio" class="radio" name="demand" id="demand4" />
-          <label for="demand4" class="radio__label">
-            Приказ № 645 Минкомсвязи России от 12.12.2016
+
+          <label class="main__product" for="demand3">
+            <input type="radio" class="radio" name="demand" id="demand3" />
+            <label for="demand3" class="radio__label">
+              Приказ № 268 Минкомсвязи России от 19.11.2012
+            </label>
           </label>
-        </div>
-        <div class="radio__wrap">
-          <input type="radio" class="radio" name="demand" id="demand5" />
-          <label for="demand5" class="radio__label">
-            Приказ № 86 Минкомсвязи России от 26.02.2018
+
+          <label class="main__product" for="demand4">
+            <input type="radio" class="radio" name="demand" id="demand4" />
+            <label for="demand4" class="radio__label">
+              Приказ №645 Минкомсвязи России от 12.12.2016
+            </label>
           </label>
-        </div>
-        <div class="radio__wrap">
-          <input type="radio" class="radio" name="demand" id="demand6" />
-          <label for="demand6" class="radio__label">
-            Приказ № 573 Минкомсвязи России от 29.10.2018
+
+          <label class="main__product" for="demand5">
+            <input type="radio" class="radio" name="demand" id="demand5" />
+            <label for="demand5" class="radio__label">
+              Приказ № 86 Минкомсвязи России от 26.02.2018
+            </label>
           </label>
-        </div>
-        <div class="radio__wrap">
-          <input type="radio" class="radio" name="demand" id="demand7" />
-          <label for="demand7" class="radio__label">
-            Приказ № 139 Минкомсвязи России от 15.04.2019
+
+          <label class="main__product" for="demand6">
+            <input type="radio" class="radio" name="demand" id="demand6" />
+            <label for="demand6" class="radio__label">
+              Приказ № 573 Минкомсвязи России от 29.10.2018
+            </label>
+          </label>
+
+          <label class="main__product" for="demand7">
+            <input type="radio" class="radio" name="demand" id="demand7" />
+            <label for="demand7" class="radio__label">
+              Приказ № 139 Минкомсвязи России от 15.04.2019
+            </label>
           </label>
         </div>
       </div>
 
-      <div class="need-solution__wrap need-solution__wrap_row" id="thirdBlock">
+      <div class="main__product-wrap main__product-wrap_btns" id="thirdBlock">
         <button class="btn btn_light" id="openProductsPopup">Перейти к продуктам</button>
-        <button class="btn btn_light" id="openOrderPopup">Оставить заявку</button>
+        <span class="text text_light"> или <a class="text text_light" id="openOrderPopup">оставить заявку</a></span>
       </div>
     </div>
   </section>

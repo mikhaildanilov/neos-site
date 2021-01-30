@@ -11,9 +11,13 @@ body
 
 a
   color: $dark
-  text-decoration: none
+  text-decoration: underline
+  outline: none
+  cursor: pointer
+  transition: all .15s ease-out
   &:hover
     color: $accent
+    text-decoration: none
 
 input[type="radio"],
 input[type="checkbox"]
@@ -21,3 +25,8 @@ input[type="checkbox"]
 
 label
   cursor: pointer
+
+#secondBlock,
+#thirdBlock
+  display: none
+  animation: slideDown .3s ease-out

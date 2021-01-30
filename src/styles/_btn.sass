@@ -3,15 +3,17 @@
   align-items: center
   justify-content: center
   width: fit-content
-  padding: 12px 20px 10px 20px
-  text-transform: uppercase
-  letter-spacing: 2px
-  font-weight: 600
-  border-radius: 1px
+  padding: 12px 20px 8px 20px
+  font-weight: 400
+  font-size: .9rem
+  letter-spacing: .4px
+  border-radius: 24px
   cursor: pointer
   border: none
   outline: none
   box-shadow: none
+  transition: all .15s ease-out
+  text-decoration: none
 
   &_light
     background: $light
@@ -25,3 +27,9 @@
     &:hover
       background: $accent
       color: $light !important
+  &_green
+    background: $accent
+    color: $light
+
+button.btn
+  padding: 12px 20px 12px 20px

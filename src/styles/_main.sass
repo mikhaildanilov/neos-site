@@ -1,5 +1,12 @@
 .main
   padding: 64px 0 64px 0
+  &_selection
+    background: $dark url('../images/waves.png') no-repeat 100% 100%
+    background-size: contain
+    .title_h2
+      margin: 0 0 24px 0
+    .title_h3
+      margin: 0 0 16px 0
 
   &__item
     position: relative
@@ -69,6 +76,7 @@
     transition: all .15s ease-out
     box-shadow: 0px 0px 1px rgba(0, 45, 77, 0.3), 0px 3px 4px rgba(0, 45, 77, 0.05)
     background: #fff url('../images/product-icon.svg') no-repeat right bottom
+    overflow: hidden
     &:hover
       box-shadow: 0px 0px 8px rgba(0, 45, 77, 0.05), 0px 32px 40px rgba(0, 45, 77, 0.15)
 
@@ -77,3 +85,34 @@
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
       grid-gap: 16px 16px
       width: 100%
+      &_we-do
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+      &_solutions
+        grid-template-columns: repeat(auto-fill, minmax(420px, 1fr))
+        .main__product
+          height: 240px
+          background-size: cover !important
+          &:hover
+            background-color: $accent !important
+          &:nth-child(1)
+            background: $dark url('../images/solutions__item-bg-dark-1.png') no-repeat center
+          &:nth-child(2)
+            background: $dark url('../images/solutions__item-bg-dark-2.png') no-repeat center
+          &:nth-child(3)
+            background: $dark url('../images/solutions__item-bg-dark-3.png') no-repeat center
+          &:nth-child(4)
+            background: $dark url('../images/solutions__item-bg-dark-4.png') no-repeat center
+      &_selection
+        margin: 0 0 32px 0
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+        .main__product
+          height: 100px
+          background: #fff
+          transition: all .15s ease-out
+          &:hover
+            background: $accent !important
+            .radio__label
+              color: #fff
+      &_btns
+        display: flex
+        align-items: center
