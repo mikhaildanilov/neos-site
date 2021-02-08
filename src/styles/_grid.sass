@@ -1,3 +1,15 @@
 .grid
   width: 880px
+  max-width: 880px
   margin: auto
+
+  @media #{$tablet}
+    width: 100%
+    max-width: 100%
+    padding: 0 32px !important
+    overflow: hidden
+
+  @media #{$phone}
+    width: 100%
+    max-width: 100%
+    padding: 0 16px

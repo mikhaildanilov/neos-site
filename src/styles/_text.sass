@@ -1,14 +1,17 @@
 .text
   font-family: 'Core Sans', sans-serif
   color: $dark
-  font-weight: 400
-  font-size: 14px
+  font-weight: 400  
 
   &_light
     color: $light
 
   &_xl
-    font-size: 20px
+    font-size: 1.3rem
+    @media #{$tablet}
+      font-size: 1rem    
+    @media #{$phone}
+      font-size: 1rem
   &_l
   &_m
     font-size: 16px
